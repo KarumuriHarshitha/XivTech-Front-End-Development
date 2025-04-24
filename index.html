@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cryptocurrency Price Tracker</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search cryptocurrency...">
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>1h %</th>
+                        <th>24h %</th>
+                        <th>7d %</th>
+                        <th>Market Cap</th>
+                        <th>Volume(24h)</th>
+                        <th>Circulating Supply</th>
+                        <th>Max Supply</th>
+                        <th>ATH</th>
+                        <th>ATH Change %</th>
+                        <th>Last 7 Days</th>
+                    </tr>
+                </thead>
+                <tbody id="cryptoList">
+                    <!-- Cryptocurrency data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="market-info">
+            <div class="info-card">
+                <h3>Global Market Cap</h3>
+                <p id="globalMarketCap">$0</p>
+            </div>
+            <div class="info-card">
+                <h3>24h Volume</h3>
+                <p id="global24hVolume">$0</p>
+            </div>
+            <div class="info-card">
+                <h3>BTC Dominance</h3>
+                <p id="btcDominance">0%</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+/* Modern gradient background */
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container with glass effect */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced header styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Search input with modern styling */
+.search-container {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: rgba(96, 165, 250, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.1);
+}
+
+#searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Enhanced market info cards */
+.market-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.market-card {
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.market-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.market-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.market-card p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Enhanced table container */
+.table-container {
+    overflow: auto;
+    max-height: calc(100vh - 250px);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    position: relative;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Stylish scrollbar */
+.table-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.3), rgba(167, 139, 250, 0.3));
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.5), rgba(167, 139, 250, 0.5));
+}
+
+/* Enhanced table styles */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+}
+
+table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(20px);
+}
+
+table th {
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(96, 165, 250, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+table tbody tr {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+    transform: scale(1.005);
+}
+
+table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    white-space: nowrap;
+}
+
+/* Enhanced price animations */
+.price-flash {
+    animation: flash 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes flash {
+    0% {
+        background-color: rgba(96, 165, 250, 0.2);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+/* Enhanced percentage colors */
+.positive {
+    color: #34d399;
+    text-shadow: 0 0 10px rgba(52, 211, 153, 0.2);
+    transition: all 0.3s ease;
+}
+
+.negative {
+    color: #f87171;
+    text-shadow: 0 0 10px rgba(248, 113, 113, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Enhanced coin name column */
+.coin-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+}
+
+.coin-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px;
+    transition: transform 0.3s ease;
+}
+
+tr:hover .coin-image {
+    transform: scale(1.1);
+}
+
+/* Enhanced chart cell */
+.chart-cell {
+    width: 180px;
+    padding: 8px !important;
+}
+
+.mini-chart {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 0.3s ease;
+}
+
+tr:hover .mini-chart {
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .table-container {
+        margin: 15px;
+        border-radius: 16px;
+    }
+    
+    table th, table td {
+        padding: 12px 15px;
+    }
+    
+    .chart-cell {
+        width: 140px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .market-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .market-card {
+        padding: 15px;
+    }
+    
+    .market-card p {
+        font-size: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Enhanced Chart Container Styling */
+.chart-container {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 24px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.2),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.5s ease;
+}
+
+.chart-container:hover {
+    transform: scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+#cryptoPriceChart {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+/* Chart Tooltip Styling */
+.chart-tooltip {
+    background: rgba(15, 23, 42, 0.9) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(20px) !important;
+    color: #e2e8f0 !important;
+    padding: 10px 15px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Chart Interaction States */
+.chart-container .chart-overlay {
+    background: rgba(96, 165, 250, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.chart-container:hover .chart-overlay {
+    opacity: 1;
+}
+
+/* Responsive Chart Adjustments */
+@media screen and (max-width: 768px) {
+    .chart-container {
+        padding: 15px;
+        border-radius: 16px;
+    }
+
+    #cryptoPriceChart {
+        height: 250px !important;
+    }
+}
+
+/* Chart Gradient and Color Scheme */
+.chart-gradient {
+    background: linear-gradient(
+        135deg, 
+        rgba(96, 165, 250, 0.2), 
+        rgba(167, 139, 250, 0.2)
+    );
+}
+
+/* Crypto Price Trend Indicators */
+.price-trend {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.price-trend-up {
+    color: #10b981;
+}
+
+.price-trend-down {
+    color: #ef4444;
+}
+
+.price-trend-neutral {
+    color: #64748b;
+}
+
+.price-trend i {
+    margin-right: 5px;
+}
